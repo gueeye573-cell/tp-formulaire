@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="inscription.html">Inscription</a> <br>
+    <a href="connexin.html">Connexion</a> <br>
+    <a href="Admission.html">admission</a> <br>
+    <a href="RECHERCHE.html">Recherche</a> <br> <br>
+
+
+    <br>
+    <form action="#" method="get">
+        <fieldset>
+            <legend><strong>Votre commande</strong></legend>
+            <div><label for="produit">Produit:</label>
+                <select name="produit" id="produit" required>
+
+                    <option value="ordinateur">Ordinateur</option>
+                    <option value="souris">Souris</option>
+                    <option value="clavier">Clavier</option>
+                    <option value="webcam">Webcam</option>
+                    <option value="casque">Casque</option>
+                </select> <br>
+            </div> <br>
+
+
+            <div><label for="quantité">Quantité:</label>
+                <input type="number" name="quantité" id="quantité" required min="1" max="10" value="1"> <br> <br>
+
+                <label for="couleur">Couleur preferer du produit:</label>
+                <input type="color" name="couleur" id="couleur" value="#000000"> <br> <br>
+
+                <label for="date de livraison">Date de livraison:</label>
+                <input type="date" name="date de livraison" id="date de livraison" required
+                    min="date d'aujourd'hui+2 jours"> <br> <br>
+
+                <label for="heure de livraison">heure de livraison:</label>
+                <input type="time" name="heure de livraison" id="heure de livraison" required min="08:00" max="18:00"
+                    step="1800"> <br> <br>
+
+
+                <input type="submit" value="Commander">
+        </fieldset>
+    </form> <br> <br>
+
+    <form action="#" method="get">
+        <fieldset>
+            <legend><strong>Votre Mode de livraison</strong></legend>
+            <label for="Mode de Livraison">Mode de livraison:</label>
+            <select name="Mode de Livraison" id="Mode de Livraison" required>
+                <option value="Domicile">Domicile</option>
+                <option value="Point relais">Point relais</option>
+                <option value="Retrait en magasin">Retrait en magasin</option>
+            </select> <br> <br>
+
+            <label for="Adresse complete">Adresse complete:</label>
+            <textarea name="Adresse complete" id="Adresse complete" required placeholder="Entrer votre adresse complete"
+                rows="3"></textarea> <br> <br>
+
+            <label for="Code postal">Code postal:</label>
+            <input type="text" name="Code postal" id="Code postal" required pattern="[0-9]{5}"
+                placeholder="Entrer votre code postal" title="Entrez un code postal valide (5 chiffres)"> <br> <br>
+
+            <label for="Ville">Ville:</label>
+            <select name="ville" id="Ville" required>
+                <option value="Dakar">Dakar</option>
+                <option value="Louga">Louga</option>
+                <option value="Thies">Thies</option>
+                <option value="Kaolack">Kaolack</option>
+
+            </select>
+        </fieldset>
+    </form> <br>
+
+    <form action="#" method="get">
+        <fieldset>
+            <legend><strong>Votre Mode de paiement</strong></legend>
+            <label for="Mode de paiement">Mode de paiement:</label>
+            <select name="Payment" id="Payment" required>
+                <option value="Carte bancaire">Carte bancaire</option>
+                <option value="Wave">Wave</option>
+                <option value="Orange money">Orange money</option>
+                <option value="Paypal">Paypal</option>
+                <option value="Virement ">Virement </option>
+            </select> <br> <br>
+
+            <label for="numero de tel mobile money">Numéro de téléphone:</label>
+            <input type="tel" name="numero de tel" id="numero de tel" required pattern="[0-9]{9}"
+                title="Entrez un numéro de téléphone valide (9 chiffres)"> <br> <br>
+
+            <input type="checkbox" name="je confirme ma commande et accepte les CGV" id="conditions" required>
+            <label for="conditions">Je confirme ma commande et accepte les conditions générales de vente.</label> <br>
+            <br>
+
+            <input type="submit" value="PASSER LA COMMANDE">
+        </fieldset>
+    </form>
+</body>
+
+</html>

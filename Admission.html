@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="inscription.html">inscription</a> <br>
+    <a href="commande.html">commande</a> <br>
+    <a href="connexin.html">connexin</a> <br>
+    <a href="RECHERCHE.html">rechercher</a> <br> <br>
+
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Etat civil et identité</legend>
+            <label for="civilité">Civilité</label>
+            <select name="civilité" id="civilité">
+                <option value="M">M</option>
+                <option value="Mme">Mme</option>
+                <option value="Dr">Dr</option>
+                <option value="Pr">Pr</option>
+            </select> <br> <br>
+
+            <label for="nom">Nom:</label> <br>
+            <input type="text" name="nom" id="nom" placeholder="entrer votre nom" required> <br> <br>
+
+            <label for="prenom">Prenom:</label> <br>
+            <input type="text" name="prenom" id="prenom" placeholder="entrer votre prenom" required> <br> <br>
+
+            <label for="date de naissance">Date de naissance:</label> <br>
+            <input type="date" name="date naiss" id="date naiss" required> <br> <br>
+
+            <label for="lieu de naissance">Lieu de naissance:</label> <br>
+            <input type="text" name="lieu de naiss" id="lieu de naiss" placeholder="votre lieu de naissance"> <br> <br>
+
+            <label for="natinalité">Nationalité:</label> <br>
+            <select name="nationalité" id="nationalité">
+                <option value="Senegal">Senegal</option>
+                <option value="Mali">Mali</option>
+                <option value="Guinee">Guinee</option>
+                <option value="Gambie">Gambie</option>
+                <option value="Niger">Niger</option>
+                <option value="Maroc">Maroc</option>
+            </select> <br> <br>
+
+            <label for="numero de piece d'identité">Numero de piece d'identité:</label> <br>
+            <input type="text" name="piece d'identité" id="piece d'identité" required> <br> <br>
+
+            <label for="fichier">selectinner un fichier</label> <br>
+            <input type="file" name="fichier" id="fichier" accept="image/jpeg" required>
+        </fieldset>
+    </form> <br> <br>
+
+    <form action="#">
+        <fieldset>
+            <legend>Coordonnees</legend> <br>
+            <label for="email">Email:</label> <br>
+            <input type="email" name="email" id="email"> <br> <br>
+
+            <label for="telephone">Telephone principal:</label> <br>
+            <input type="tel" name="telephone" id="telephone" pattern="[0-9] {5}"> <br>
+            <label for="telephone">Tel secondaire:</label> <br>
+            <input type="tel" name="telephone" id="telephone" pattern="[0-9] {5}"> <br> <br>
+
+            <label for="adresse postal">Adresse postale:</label> <br>
+            <textarea name="adresse postale" id="adresse postale" placeholder="entrer votre adresse postale"></textarea>
+            <br> <br>
+
+            <label for="Regions">Regions</label> <br>
+            <select name="region" id="region">
+                <option value="Dakar">Dakar</option>
+                <option value="Saint Louis">Saint Louis</option>
+                <option value="Thies">Thies</option>
+                <option value="Louga">Louga</option>
+                <option value="Kaolack">Kaolack</option>
+                <option value="Fatick">Fatick</option>
+                <option value="Ziguinchor">Ziguinchor</option>
+                <option value="Matam">Matam</option>
+                <option value="Kedougou">Kedougu</option>
+            </select>
+        </fieldset>
+    </form> <br> <br>
+
+    <form action="#">
+        <fieldset>
+            <legend>Cursus Academique</legend>
+            <label for="Diplome obtenus">Diplome obtenus</label> <BR>
+            <select name="cursus academique" id="cursus academique">
+                <option value="BFEM">BFEM</option>
+                <option value="BAC">BAC</option>
+                <option value="ICENSE">LICENSE</option>
+                <option value="MASTER">MASTER</option>
+            </select> <br> <br>
+
+            Mention <br>
+            <input type="radio" name="mention" id="Passable">
+            <label for="Passable">Passable</label> <br>
+            <input type="radio" id="assez bien" name="mention">
+            <label for="assez birn">Assez Bien</label> <br>
+            <input type="radio" name="mention" id="bien">
+            <label for="bien">Bien</label> <br>
+            <input type="radio" id="tres bien" name="mention">
+            <label for="trs bien">Tres bien</label> <br>
+            <input type="radio" name="mention" id="exellent">
+            <label for="Exellent">Exellent</label> <br> <br>
+
+            <label for="annee d'obtention">Annee d'obtention:</label> <br>
+            <input type="number" name="annee d'obtention" id="annee d'obtention" min="2000" max="2025"> <br> <br>
+
+            <label for="etablissement d'oigine">Etablissement d'origine:</label><br>
+            <input type="text" name="etablissement d'orogine" required> <br> <br>
+
+            <label for="releve de note">Releve de Note:</label> <br>
+            <input type="file" name="fichier" id="fichier" accept="pdf" required> <br> <br>
+
+            <label for="autre diplomes et certificats">Autre Diplomes ou Certificats:</label> <br>
+            <textarea name="diplome ou certificat" id="diplome ou certificat" placeholder="facultatif"></textarea>
+        </fieldset>
+    </form> <br> <br>
+
+    <form action="#">
+        <fieldset>
+            <legend>Formation Academique</legend>
+            <label for="filliere demander au 1er choix">filliere demander au 1er choix:</label> <br>
+            <select name="filliere" id="filliere">
+                <optgroup label="Informatique">
+                    <option value="Progemmation">Programmation</option>
+                    <option value="Reseau">Reseau</option>
+                    <option value="Cyber">Cyber</option>
+                </optgroup>
+                <optgroup label="Gestion">
+                    <option value="comptablité">Comptablité</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Marketing">Marketing</option>
+                </optgroup>
+                <optgroup label="Science">
+                    <option value="physique">Physique</option>
+                    <option value="chimique">Chimique</option>
+                    <option value="svt">SVT</option>
+                </optgroup>
+            </select> <br> <br>
+
+            <label for="filliere demander au 2e choix">Filliere demander au 2e choix:</label> <br>
+            <select name="Filliere" id="Filliere">
+                <option value="Progemmation">Programmation</option>
+                <option value="Reseau">Reseau</option>
+                <option value="Cyber">Cyber</option>
+                <option value="comptablité">Comptablité</option>
+                <option value="Finance">Finance</option>
+                <option value="Marketing">Marketing</option>
+                <option value="physique">Physique</option>
+                <option value="chimique">Chimique</option>
+                <option value="svt">SVT</option>
+            </select> <br> <br>
+
+            Regime d'etude Souhaité: <br>
+            <input type="radio" name="regime d'etude" id="Presentiel">
+            <label for="presentiel">Preseniel</label> <br>
+            <input type="radio" name="regime d'etude" id="distance">
+            <label for="distance">Distance</label> <br>
+            <input type="radio" name="regime d'etude" id="Hybride">
+            <label for="Hybride">Hybride</label> <br> <br>
+
+            langue maitriseé: <br>
+            <input type="checkbox" name="francais" id="francais">
+            <label for="Francais">Francais</label> <br>
+            <input type="checkbox" name="anglais" id="anglais">
+            <label for="anglais">Anglais</label> <br>
+            <input type="checkbox" name="arabe" id="arabe">
+            <label for="arabe">Arabe</label> <br>
+            <input type="checkbox" name="autre" id="autre">
+            <label for="autre">Autre</label> <br> <br>
+
+
+            <label for="Niveaud'anglais">Niveau d'anglais:</label> <br>
+            <input type="range" name="niveau d'anglais" id="niveau d'anglais" min="0" max="5">
+        </fieldset>
+    </form> <br> <br>
+
+    <form action="#">
+        <fieldset>
+            <legend>Motivation et documents</legend>
+            <label for="lettre de motivation">Lettre de motivation:</label> <br>
+            <textarea name="lettre" id="lettre" rows="8" minlength="200" maxlength="2000" required
+                placeholder="votre lettre de motivation"></textarea> <br> <br>
+
+            <label for="Comment vous avez connu notre universite?">Comment vous avez connu notre université?</label>
+            <br>
+            <select name="Comment vous avez connu notre universite?" id="Comment vous avez connu notre universite?">
+                <option value="selon etudiant">selon etudiant</option>
+                <option value="recommandation">Recommandation</option>
+                <option value="internet">Internet</option>
+                <option value="autre">Autre</option>
+            </select> <br> <br>
+
+            <label for="fichier">Fichier:</label> <br>
+            <input type="file" name="fichier" id="fichier" accept="pdf;doc;docx">
+        </fieldset>
+    </form> <br> <br>
+
+    <form action="#">
+        <fieldset>
+            <legend>Declaration et soumission</legend>
+            <input type="checkbox" name="Je certifie l'exactitude des informations fournies" required>
+            <label for="Je certifie l'exactitude des informations fournies">Je certifie l'exactitude des informations
+                fournies</label> <br>
+
+            <input type="checkbox" name="J'accepte la politique de confidentialité" required>
+            <label for="J'accepte la politique de confidentialité">J'accepte la politique de confidentialité</label>
+            <br>
+
+            <input type="hidden" name="annee-candidature" value="2025">
+            <label for="annee-candidature">Annee-candidature</label> <br> <br>
+
+            <input type="submit" name="Soumettre ma candidature"> <br> <br>
+            Verifiez vos informations avant de soumettre toute fausse déclaration entraine l'annulation de la
+            candidature
+        </fieldset>
+    </form>
+</body>
+
+</html>

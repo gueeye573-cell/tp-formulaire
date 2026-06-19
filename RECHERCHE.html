@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="commande.html">commande</a> <br>
+    <a href="connexin.html">connexin</a> <br>
+    <a href="Admission.html">admission</a> <br>
+    <a href="inscription.html">inscription</a> <br> <br>
+
+
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Rechercher un produit</legend>
+            <label for="recherche">Rechercher un produit:</label>
+            <input type="search" name="recherche" id="recherche" placeholder="titre, auteur, mot clés" required> <br>
+            <br>
+            <input type="submit" value="Rechercher">
+        </fieldset>
+    </form> <br>
+
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Afficher la Recherche </legend>
+
+            <label for="">type de Document</label> <br> <br>
+
+            <input type="checkbox" name="livre" id="Livre">
+            <label for="Livre">Livre</label> <br>
+
+            <input type="checkbox" name="article" id="article">
+            <label for="Article">Article</label> <br>
+
+            <input type="checkbox" name="these" id="These">
+            <label for="These">These</label> <br>
+
+            <input type="checkbox" name="Rapport" id="Rapport">
+            <label for="Rapport">Rapport</label> <br>
+
+            <input type="checkbox" name="Magazine" id="Magazine">
+            <label for="Magazine">Magazine</label> <br> <br>
+
+            <label for="Domaine">Domaine</label> <br>
+            <select name="Domaine" id="Domaine" required>
+                <optgroup label="Sciences Exactes">
+                    <option value="Informatique">Informatique</option>
+                    <option value="Mathématiques">Mathématiques</option>
+                    <option value="Physique">Physique</option>
+                </optgroup>
+                <optgroup label="Sciences de la Vie">
+                    <option value="Chimie">Chimie</option>
+                    <option value="Biologie">Biologie</option>
+                </optgroup>
+            </select> <br> <br>
+
+            <label for="annee de publication">Année de publication De:</label> <br>
+            <input type="number" name="De:" id="annee de publication" required min="1900">
+            <label for="annee de publication">A:</label>
+            <input type="number" name="A:" max="2025">
+            <br> <br>
+
+            <label for="langue">Langue:</label> <br>
+            <select name="langue" id="langue" required>
+                <option value="Français">Français</option>
+                <option value="Anglais">Anglais</option>
+                <option value="Arabe">Arabe</option>
+                <option value="Wolof">Wolof</option>
+            </select> <br> <br>
+
+
+            <label for="Disponibilité">Disponibilité:</label> <br>
+            <input type="radio" name="Disponibilité" id="Disponible" value="Disponible">
+            <label for="Disponible uniquement">Disponible uniquement</label> <br>
+
+            <input type="radio" name="Disponibilité" id="Tout" value="Tout">
+            <label for="Tout les documents">tout les documents</label> <br> <br>
+
+            <label for="nombre de resultats par page">Nombre de résultats par page:</label>
+            <select name="nombre de resultats par page" id="nombre de resultats par page" required>
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select><br> <br>
+
+            <input type="submit" value="Appliquer les Filtres"> <br> <br>
+            <input type="reset" value="Reinsialiser">
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
